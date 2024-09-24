@@ -1,0 +1,21 @@
+{
+    "request": {
+        "user": {
+            "id": "123AR45",
+            "role": "admin",
+            "active": true
+        },
+        "data": {
+            "ids": [
+                {
+                    "id": "dup100",
+                    "type": "duplicate"
+                },
+                {
+                    "id": "dup200",
+                    "type": "duplicate"
+                }
+            ]
+        }
+    }
+}
