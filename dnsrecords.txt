@@ -1,0 +1,43 @@
+MX records:
+
+; <<>> DiG 9.10.6 <<>> cio1.customer.io MX
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57907
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;cio1.customer.io.		IN	MX
+
+;; ANSWER SECTION:
+cio1.customer.io.	60	IN	MX	10 mxa.mailgun.org.
+cio1.customer.io.	60	IN	MX	10 mxb.mailgun.org.
+
+;; Query time: 11 msec
+;; SERVER: 192.168.1.1#53(192.168.1.1)
+;; WHEN: Tue Sep 24 14:59:45 BST 2024
+;; MSG SIZE  rcvd: 96
+
+
+TXT records:
+
+; <<>> DiG 9.10.6 <<>> cio1.customer.io TXT
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28063
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;cio1.customer.io.		IN	TXT
+
+;; ANSWER SECTION:
+cio1.customer.io.	60	IN	TXT	"v=spf1 include:mailgun.org ~all"
+
+;; Query time: 18 msec
+;; SERVER: 192.168.1.1#53(192.168.1.1)
+;; WHEN: Tue Sep 24 15:01:32 BST 2024
+;; MSG SIZE  rcvd: 89
